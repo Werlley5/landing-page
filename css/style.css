@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+:root {
+    --color-1: hsl(7, 99%, 70%);
+    --color-2: hsl(51, 100%, 49%);
+    --color-3: hsl(167, 40%, 24%);
+    --color-4: hsl(198, 62%, 26%);
+    /*--color-5: hsl(168, 61%, 64%);*/
+    --color-6: hsl(212, 27%, 19%);
+    --color-7: hsl(213, 9%, 39%);
+    --color-8: hsl(232, 10%, 55%);
+    --color-9: hsl(210, 4%, 67%);
+    --color-10: hsl(0, 0%, 100%);
+    --color-11: hsl(189, 97%, 64%);
+    --color-12: hsl(168, 34%, 41%);
+    --color-13: hsl(168, 61%, 64%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow';
+}
+
+/*barra de navegação*/
+
+header {
+    min-height: 500px;
+    background-image: url('../img/image-header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nav-cont {
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.nav-links ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links ul li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: var(--color-10);
+}
+
+.nav-links ul li a:hover {
+    text-decoration: 2px underline;
+}
+
+#btn-contact {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-10);
+    color: var(--color-6);
+    text-transform: uppercase;
+    font-family: 'Fraunces';
+    font-size: 12px;
+    border-radius: 30px;
+}
+
+#btn-contact:hover {
+    background-color: var(--color-11);
+    color: var(--color-10);
+    text-decoration: none;
+}
+
+.nav-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.nav-title h1 {
+    font-size: 42px;
+    font-family: 'Fraunces';
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: var(--color-10);
+}
+
+.nav-title img {
+    width: 20px;
+    margin-top: 60px;
+}
+
+.mobile-cont {
+    display: none;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+/*---------------------------------------*/
+
+/*sections*/
+
+.pincipal-cont {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.principal-card {
+    width: 100%;
+    display: flex;
+}
+
+.card-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.card-text h2 {
+    color: var(--color-6);
+    font-family: 'Fraunces';
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#underline1 {
+    font-size: 14px;
+    font-family: 'Fraunces';
+    text-decoration: underline 3px var(--color-2);
+}
+
+#underline2 {
+    font-size: 14px;
+    font-family: 'Fraunces';
+    text-decoration: underline 3px var(--color-1);
+}
+
+.card-text p {
+    max-width: 400px;
+    color: var(--color-7);
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.card-img {
+    width: 50%;
+}
+
+.card-img img {
+    max-width: 100%;
+}
+
+.background-card1 {
+    width: 50%;
+    height: 350px;
+    background-image: url('../img/image-graphic-design.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.background-card1 h2 {
+    color: var(--color-6);
+    font-family: 'Fraunces';
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.background-card1 p {
+    max-width: 300px;
+    color: var(--color-7);
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.background-card2 {
+    width: 50%;
+    height: 350px;
+    background-image: url('../img/image-photography.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.background-card2 h2 {
+    color: var(--color-6);
+    font-family: 'Fraunces';
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.background-card2 p {
+    max-width: 300px;
+    color: var(--color-7);
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+section.depoiments {
+    padding-top: 80px;
+    text-align: center;
+}
+
+.depoiments h2 {
+    color: var(--color-9);
+    font-family: 'Fraunces';
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.dep-cont {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.dep-card {
+    text-align: center;
+}
+
+.dep-card p {
+    max-width: 280px;
+    color: var(--color-7);
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+.dep-card h3 {
+    font-family: 'Fraunces';
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.dep-card h6 {
+    color: var(--color-9);
+    font-family: 'Fraunces';
+    font-size: 10px;
+}
+
+.dep-card img {
+    width: 50px;
+    border-radius: 100%;
+    margin-bottom: 30px;
+}
+
+section.photos {
+    padding-top: 80px;
+}
+
+.ph-img {
+    display: flex;
+}
+
+.ph-img img {
+    width: calc(100% / 4);
+}
+
+/*---------------------------------------*/
+
+/*rodapé*/
+
+footer {
+    height: 250px;
+    background-color: var(--color-13);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-cont {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+
+.footer-logo h2 {
+    color: var(--color-3);
+    font-family: 'Fraunces';
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+.footer-links ul {
+    display: flex;
+    list-style: none;
+    margin-bottom: 50px;
+}
+
+.footer-links ul li:not(:last-child) {
+    margin-right: 60px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: var(--color-12);
+}
+
+.footer-links ul li a:hover {
+    color: var(--color-10);
+}
+
+.footer-midia a:not(:last-child) {
+    margin-right: 30px;
+}
+
+/*---------------------------------------*/
+
+@media(max-width: 768px) {
+
+    .nav-title {
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .nav-title h1 {
+        font-size: 46px;
+    }
+
+    .nav-title img {
+        width: 20px;
+        margin-top: 10px;
+    }
+
+    .principal-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first {
+        flex-direction: column-reverse;
+    }
+
+    .card-text {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-img {
+        width: 100%;
+    }
+
+    .background-card1 {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .background-card2 {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .dep-cont {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ph-img {
+        flex-wrap: wrap;
+    }
+    
+    .ph-img img {
+        width: calc(100% / 2);
+    }
+
+}
